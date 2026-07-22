@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 20px;
+    padding: 15px 20px;
+    color: rgb(18, 18, 18);
+    background-color: #dbd4c6;
+}
+
+header h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3E2C1C;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    list-style: none;
+
+}
+
+header a{
+    text-decoration: none;
+    color:#3E2C1C;
+    font-size: 15px;
+
+}
+
+.hero{
+    height: 500px;
+    background-image: url("../assets/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+
+}
+
+.hero h1{
+    color: #3E2C1C;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero p{
+    color: #3E2C1C;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-top: 15px;
+}
+
+.productos{
+    padding: 50px 20px;
+}
+
+.productos h2{
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.contenedor-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    margin-top: 3px;
+    border: 1px solid #8f6641;
+    border-radius: 10px;
+    background-color: #8f6641;
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+   
+}
+
+.pagina-productos{
+    padding: 50px 20px;
+}
+
+.pagina-productos h1{
+    text-align: center;
+    color: #3E2C1C;
+}
+
+.pagina-productos p{
+    text-align: center;
+    margin-top: 10px;
+    color: #3E2C1C;
+}
+
+.card{
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.galeria img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+}
+
+label{
+    margin-top: 15px;
+}
+
+input,
+textarea{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 5px 15px;
+    background-color: #3E2C1C;
+    color: #FAF7F2;
+    border: none;
+    border-radius: 8px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+button:hover{
+    background-color: #6b4b35;
+    transform: translateY(-3px);
+}
+.Contacto h2{
+    text-align: center;
+    color: #3E2C1C;
+}
+
+.mis-datos{
+    margin-top: 50px;
+    text-align: center;
+    color: #6b4b35;
+
+}
+
+.mis-datos h2{
+    margin-top: 20px;
+}
+
+.mis-datos p{
+    margin-top: 15px;
+}
+
+body{
+    font-family: "Cormorant Garamond", serif;
+    background-color: #dbd4c6;
+}
+
+.botones-flotantes{
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boton{
+    width: 30px;
+    height: 30px;
+
+    border: 2px solid #3E2C1C;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #FAF7F2;
+    color: #3E2C1C;
+    text-decoration: none;
+
+    transition: all .3s;
+}
+
+.boton:hover{
+    background-color: #3E2C1C;
+    color: #FAF7F2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 760px){
+
+    ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero{
+        height: 350px;
+        background-image:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("../assets/hero.png");
+    }
+
+     .hero h1{
+        font-size: 40px;
+        color: white;
+    }
+
+       .hero p{
+        font-size: 22px;
+        margin-top: 20px;
+        color: white;
+    }
+    
+    .card{
+        width: 90%;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    header h2{
+        font-size: 24px;
+    }
+
+    header a{
+        font-size: 18px;
+    }
+
+    .boton{
+        width: 50px;
+        height: 50px;
+    }
+}
