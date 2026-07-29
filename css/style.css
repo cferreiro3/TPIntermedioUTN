@@ -392,6 +392,10 @@ footer p{
         margin-top: 20px;
         color: white;
     }
+
+    .cta{
+    margin-top: 50px;
+}
     
     .card{
         width: 90%;
