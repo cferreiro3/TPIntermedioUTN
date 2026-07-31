@@ -8,6 +8,7 @@ header {
     padding: 15px 20px;
     color: #3d2b1f;
     background-color: #e8ddcf;
+   
 }
 
 header h2{
@@ -112,7 +113,7 @@ header a{
     color: white;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 
 
@@ -185,12 +186,26 @@ header a{
     padding: 40px 20px;
 }
 
+.titulo-galeria{
+    text-align: center;
+    color: #3d2b1f;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
 .galeria img{
     width: 250px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0,3s;
 }
+
+.galeria img:hover{
+    transform: translateY(-8px);
+}
+
+
 
 form{
     display: flex;
